@@ -1,0 +1,105 @@
+.content {
+  background-color: #f8f9fa;
+  padding-bottom: 41px;
+  position: relative;
+}
+
+.hot {
+  color: $primary;
+  width: $hot-width;
+  margin: 0 auto;
+  padding: 20px 26px;
+  background-color: $secondary;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  top: -25px;
+
+  &__title {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__btn {
+    font-size: 20px;
+    padding: 10px 32px;
+    color: $secondary;
+    border-radius: 5px;
+    transition: 0.2s;
+
+    @each $key, $value in $hot-btn-themes {
+      &--#{$key} {
+        background-color: $value;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.middleLine {
+  padding-right: 62px;
+  padding-left: 62px;
+  position: relative;
+  margin-bottom: 65px;
+  hr {
+    border: 1px dashed $thirdly;
+  }
+  .mark {
+    border: 2px solid $thirdly;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -12px;
+    left: 50%;
+  }
+}
+
+.countryName {
+  font-size: 36px;
+  color: $country-name-color;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.attractions {
+  padding-left: 40px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 9px;
+  img {
+    margin-right: 9px;
+  }
+}
+
+.scrollTopBtn {
+  width: 24px;
+  height: 24px;
+  background-color: #559ac8;
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+  transition: all 0.4s;
+  z-index: 2;
+  &.hide {
+    display: none;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}

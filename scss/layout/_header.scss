@@ -1,0 +1,33 @@
+header {
+  background-image: url($banner-img-src);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000000;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: $secondary;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 96px;
+}
+
+.selectForm {
+  width: $form-width;
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #ffffff;
+  border-radius: 3px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #000000;
+  line-height: 21px;
+
+  &:focus {
+    outline: none;
+  }
+}

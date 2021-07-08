@@ -1,0 +1,66 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: $card-width;
+  background: $secondary;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 36px;
+  &:nth-child(2n) {
+    margin-left: 1rem;
+  }
+  &__header {
+    background: transparent no-repeat center/cover;
+    height: $card-header-hight;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__body {
+    padding: 15px 22px;
+  }
+  &__title {
+    padding: 14px 22px;
+    color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.page-item {
+  a {
+    color: $page-item-color;
+    font-size: 0.875rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+    &:hover {
+      background-color: lighten($color: $primary, $amount: 60%);
+      color: $secondary;
+    }
+  }
+  &.active {
+    a {
+      color: $secondary;
+    }
+    background-color: $primary;
+  }
+}

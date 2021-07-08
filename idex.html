@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>高雄旅遊資訊</title>
+
+    <link
+        rel="stylesheet"
+        href="css/all.css"
+    >
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">高雄旅遊資訊</h1>
+            <select
+                name="country"
+                id="contry"
+                class="selectForm js-selectForm"
+            >
+
+            </select>
+        </header>
+        <main class="content">
+            <div class="hot">
+                <h3 class="hot__title">熱門行政區</h3>
+                <ul class="hot__list js-hotList">
+                    <li>
+                        <a
+                            class="btn hot__btn hot__btn--purple"
+                            href="#"
+                        > 苓雅區 </a>
+                    </li>
+                    <li>
+                        <a
+                            class="btn hot__btn hot__btn--orange"
+                            href="#"
+                        > 三民區 </a>
+                    </li>
+                    <li>
+                        <a
+                            class="btn hot__btn hot__btn--yellow"
+                            href="#"
+                        > 新興區 </a>
+                    </li>
+                    <li>
+                        <a
+                            class="btn hot__btn hot__btn--blue"
+                            href="#"
+                        > 鹽埕區 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middleLine">
+                <hr>
+                <div class="mark">
+                    <img
+                        src="./img/icons_down.png"
+                        alt="down icon"
+                    >
+                </div>
+            </div>
+            <div class="result">
+                <h3 class="countryName js-countryName"></h3>
+                <ul class="attractions cardGroup js-attractionsList">
+                </ul>
+                <nav>
+                    <ul class="pagination js-pagination">
+                    </ul>
+                </nav>
+            </div>
+            <a class="btn scrollTopBtn hide js-scrollTopBtn">
+                <img
+                    src="./img/btn_goTop.png"
+                    alt="scroll top button"
+                >
+            </a>
+        </main>
+        <footer>
+            <p>高雄資訊網</p>
+            <p class="reference">資料來源高雄市政府</p>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
