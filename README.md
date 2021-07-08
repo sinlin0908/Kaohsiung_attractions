@@ -1,6 +1,6 @@
 # Kaohsiung Attractions
 
-![](https://i.imgur.com/OtoNd42.jpg)
+![](https://i.imgur.com/cGet8wc.jpg)
 
 成品 Demo : https://sinlin0908.github.io/Kaohsiung_attractions/
 
